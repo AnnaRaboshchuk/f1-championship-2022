@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🏎F1 Championship 2022</title>
+    <style>
+        body {
+            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(247, 30, 30) 100.3%);
+            color: #fafafa;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #841818;
+            padding: 15px;
+            border-radius: 40px 15px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            border-radius: 150px 5px;
+        }
+        
+        p {
+            line-height: 1.5;
+            font-size: 18px;
+            margin: 20px 0px 10px;
+        }
+
+        span {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        button {
+            display: block;
+            margin: 40px auto;
+            background: linear-gradient(90.3deg, rgb(255, 255, 255) 3%, rgb(235, 158, 98) 34.6%, 
+            rgb(177, 10, 10) 63.7%, rgb(0, 0, 0) 113%);
+            color: #0C273C;
+            font-size: 30px;
+            padding: 20px 30px;
+            border: 1px solid #841818;
+            border-radius: 150px 5px;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0.4);
+            transition: all 200ms ease-in-out;
+        }
+        button:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .contant {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .wikipedia {
+            display: block;
+            text-decoration: none;
+            color: #B60404;
+            font-size: 16px;
+        }
+        .wikipedia:hover {
+            text-decoration: underline;
+        }
+
+        .f1 {
+            display: block;
+            text-decoration: none;
+            color: #B60404;
+            font-size: 16px;
+        }
+        .f1:hover{
+            text-decoration: underline;
+        }
+        
+        .fia {
+            display: block;
+            text-decoration: none;
+            color: #B60404;
+            font-size: 16px;
+        }
+        .fia:hover {
+            text-decoration: underline;
+        }
+
+        .signature {
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="contant">
+        <h1>🏎</br> 
+        F1 Championship 2022 </h1>
+        <h2> <em>Be ready for speed!</em> </h2>
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/366/original/f1-22-launch-date-revealed-new-cars-regulations-and-the-miami-grand-prix-added-186997_1.jpg?1663415459" alt="F1 car">
+        <p>
+        The 
+        <strong>2022 FIA Formula One World Championship</strong>  
+        is a motor racing championship for Formula One cars which is 
+        <span>the 73rd running of the Formula One World Championship.</span> It is recognised by the Fédération Internationale
+        de l'Automobile (FIA), the governing body of international motorsport, as the highest class of competition
+        for open-wheel racing cars. The championship is contested over twenty-two Grands Prix, which are held 
+        around the world, and it is scheduled to end earlier than in other recent years to avoid overlapping 
+        with the FIFA World Cup. </p>
+        <hr>
+        <p>
+        Drivers and teams are competing for the titles of World Drivers' Champion and World Constructors' Champion,
+        respectively. The 2022 championship saw the introduction of significant changes to the sport's technical 
+        regulations. These changes had been intended to be introduced in 2021, but were delayed until 2022 in 
+        response to the COVID-19 pandemic. Max Verstappen, driving for Red Bull Racing, is the reigning Drivers'
+        Champion, whilst Mercedes are the reigning Constructors' Champions.
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/2022_Formula_One_World_Championship" target="_blank" class="wikipedia"> 
+        Lear more on Wikipedia
+        </a>
+        <br>
+
+        <a href="https://www.formula1.com/en.html" target="_blank" class="f1">
+        Official page of F1
+        </a>
+        <br>
+        
+        <a href="https://www.fia.com/events/fia-formula-one-world-championship/season-2022/2022-fia-formula-one-world-championship"
+        target="_blank" class="fia">
+        FIA page
+        </a>
+
+        <button class="button_type">Check your winner!✌</button>
+
+        <p class="signature">
+        This page was made by Anna Raboshchuk 👩‍💻
+        </p>
+
+    </div>
+    <script>
+        function check() {
+            let name = prompt("What is your name?");
+            let driver = prompt("Which driver do you support?");
+            let points = prompt("How many points does he have now?");
+            if (points >200) {
+                alert("Congratulate,"+ " " + name + "!" + " " + driver + " " +"with" + " " + points + " " +
+                "points has chances to become a champion!✌🏎💪👏");
+            } else {
+                alert("Sorry," + name + "😥" + " " +"But" +" " + driver + " " + 
+                "doesn't have enough points to win 😥 this year. He did his best 💪! Hope next year will be better 🙏");
+            }
+        }
+        let buttonType = document.querySelector(".button_type");
+        buttonType.addEventListener("click", check);
+    </script>
+   
+
+</body>
+</html>
